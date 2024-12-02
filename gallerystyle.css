@@ -21,7 +21,7 @@
     font-family: 'Times New Roman', Times, serif;
     color: #fff;
     background: radial-gradient(circle, #2a004f, #35016c, #a67c00);
-    background-size: 300% 300%;
+    background-size: 125% 125%;
     animation: gradientShift 5s ease infinite;
     min-height: 100vh;
     display: flex;
