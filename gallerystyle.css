@@ -185,6 +185,10 @@ footer {
 }
 
 @media (max-width: 480px) {
+  .header-image img {
+    width: 25%; /* Make logo bigger */
+  }
+
   .gallery-title {
     font-size: 1.2rem;
   }
@@ -200,11 +204,15 @@ footer {
   }
 
   .gallery .grid {
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    display: grid;
+    grid-template-columns: 1fr; /* Photos appear one below another */
   }
 
   .video-container iframe {
-    height: 25vh;
+    width: 100%;
+    height: 20vh; /* Updated YouTube dimensions */
   }
+}
+
 
   
