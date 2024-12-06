@@ -121,13 +121,12 @@ main {
 .gallery .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 1.04%;
+  gap: 0; /* No space between images */
 }
 
 .gallery .grid img {
   width: 100%;
   object-fit: cover;
-  border-radius: 8px;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
   transition: transform 0.3s;
 }
@@ -163,6 +162,12 @@ footer {
 
   .video-container iframe {
     height: 40vh;
+  }
+
+  .gallery .grid {
+    display: grid;
+    grid-template-columns: 1fr; /* Pinterest-style one column layout */
+    gap: 0;
   }
 }
 
@@ -213,6 +218,7 @@ footer {
     height: 20vh; /* Updated YouTube dimensions */
   }
 }
+
 
 
   
